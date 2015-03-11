@@ -1,4 +1,4 @@
-\documentclass[UKenglish]{ifimaster}  
+\documentclass[UKenglish, 12pt]{article}  
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc,url}
 \usepackage{epigraph}
@@ -8,7 +8,7 @@
 
 \title{Injury surveillance in Sri Lanka}
 \subtitle{How to improve data-collection for injury surveillance
-using Web-based forms in Sri Lanka}
+using web-based forms in Sri Lanka}
 \author{Henning Grimeland Koller} 
 
 \newcommand{\WHO}{World Health Organization }
@@ -19,72 +19,149 @@ using Web-based forms in Sri Lanka }
 
 \begin{document}
 \ififorside{}
-\frontmatter{}
-\maketitle{}
+\newpage
 
-\chapter*{Abstract}
-My abstract
-\tableofcontents{}
-%\listoffigures{}
-%\listoftables{}
-\mainmatter{}
+\section*{Introduction} 
+\epigraph{ An injury is the physical damage that
+results when a human body is suddenly or briefly subjected to intolerable
+levels of energy.}{\textit{\WHO\cite{who-guide}}}
 
-\chapter{Introduction}
-\epigraph{
-An injury is the physical damage that results when a human body is suddenly or briefly subjected to intolerable levels of energy.}{\textit{\WHO\cite{who-guide}}}
+According to a new document published by \WHO\cite{who-article} 14000 people
+dies as a result of injuries every day.  Injuries are an important health
+concern, and a growing problem in some countries. Specifically in developing
+countries with an increase in economy, motorization and road traffic.  This
+quick growth in technology and motorization also comes with a great risk of
+accidents and injury.  Right now road traffic injuries and falls are on rank 9,
+and 21 respectively on the leading causes of death in
+2012.\cite[4]{who-article} But because of the growth in many low- and
+middle-income countries they are expected to rise to rank 7, and 17 by 2030.
+And this is just deaths, a small portion of injuries leads to deaths. Most of
+injuries lead to hospitalization and disability.  To prevent these injuries we
+need information. We need data telling us why they happened, how they happened
+and where they happened.  This will tell us how serious the different injury
+types are and what can be done to prevent them from happening.
 
-According to a new document published by \WHO\cite{who-article} 14000 people dies as a result of injuries every day.
-Injuries are an important health concern, and a growing problem in some countries. Specifically in developing countries with an increase in economy, motorization and road traffic.
-This quick growth in technology and motorization also comes with a great risk of accidents and injury.
-Right now road traffic injuries and falls are on rank 9, and 21 respectively on the leading causes of death in 2012.\cite[4]{who-article} 
-But because of the growth in many low- and middle-income countries they are expected to rise to rank 7, and 17 by 2030.
-And this is just deaths, a small portion of injuries leads to deaths. Most of injuries lead to hospitalization and disability.
-To prevent these injuries we need information. We need data telling us why they happened, how they happened and where they happened. 
-This will tell us how serious the different injury types are and what can be done to prevent them from happening.
+\subsection*{Injury surveillance}
+Injury surveillance is one way to collect, and
+make use of all this data.  Surveillance refers to the ongoing and systematic
+collection, analysis, interpretation and dissemination of health
+information.\cite[11]{who-guide} One important thing to note is that
+surveillance is an \textit{ongoing} process.  It's not a one time thing. The
+whole point is to systematically collect data, analyze and make use of the
+data.  There is two approaches to this, \textit{active} and \textit{passive}
+surveillance. \\Active surveillance is actively going out, searching for injury
+cases and conducting investigations.  People injured are questioned about the
+incident and followed up for more questions. This is an expensive approach,
+both financially and by human resources. \\Passive surveillance is collecting
+data while doing other tasks.  Like when a nurse in a hospital or a clinic
+fills out forms she is obligated to fill in anyway. From these forms there
+might be possible to extract data on injuries. This way, the surveillance is
+done in hospitals and health clinics, where injured people usually would go.
+This cuts back on the expenses as doctors and nurses fills out this information
+as a part of their job anyway.\\
 
-\section*{Injury surveillance}
-Injury surveillance is one way to collect, and make use of all this data.
-Surveillance refers to the ongoing and systematic collection, analysis, interpretation and dissemination of health information.\cite[11]{who-guide}
-One important thing to note is that surveillance is an \textit{ongoing} process. It's not a one time thing. The whole point is to systematically collect data, analyze and make use of the data.
-There is two approaches to this, \textit{active} and \textit{passive} surveillance. \\Active surveillance is actively going out, searching for injury cases and conducting investigations.
-People injured are questioned about the incident and followed up for more questions. This is an expensive approach, both financially and by human resources. \\Passive surveillance is collecting data while doing other tasks. 
-Like when a nurse in a hospital or a clinic fills out forms she is obligated to fill in anyway. From these forms there might be possible to extract data on injuries. This way, the surveillance is done in hospitals and health clinics, where injured people usually would go.
-This cuts back on the expenses as doctors and nurses fills out this information as a part of their job anyway.
+The data needed to be collected might differ from injury to injury. Data on
+traffic injuries should tell what kind of vehicles were involved, while this is
+not needed in fall injuries. But there is some data you need to collect on all
+types of injuries. For this purpose \WHO created what they call "the core data
+set".\cite[25]{who-guide} The core data set is further divided into minimum and
+optional. The core minimum set is the recommended basic data set all \is
+systems should collect. The data set include:
+\newline \emph{-Patient identifier}
+\newline \emph{-Age}
+\newline \emph{-Sex}
+\newline \emph{-Intent}
+\newline \emph{-Place of occurrence}
+\newline \emph{-Activity at the time of injury}
+\newline \emph{-Mechanism/cause of injury}
+\newline \emph{-Nature of injury}
+\newline The core optional data set is not something
+the system need to collect, but if there is resources and the information is
+deemed useful it should be. 
 
-\\
-The data needed to be collected might differ from injury to injury. Data on traffic injuries should tell
-what kind of vehicles were involved, while this is not needed in fall injuries. But there is some data you need
-to collect on all types of injuries. For this purpose \WHO created what they call "core data".\cite[25]{who-guide}
-The core data is further divided into minimum and optional. The core minimum set is the recommended basic data set all \is systems should collect. The data set include:
-\begin{itemize}
-	\item Patient identifier
-	\item Age 
-	\item Sex
-	\item Intent
-	\item Place of occurrence
-	\item Activity at the time of injury
-	\item Mechanism/cause of injury
-	\item Nature of injury
-\end{itemize}
 
-\chapter{Research question}
-\textit{"\RQ"}
-\\\\
-This question has many parts that we need to break down before we can discuss the research method.
-First of all \textbf{\is}, as described earlier, is an ongoing and systematic collection of injury information and then creating usable
-and understandable data from this information. \textbf{Data-collection} means how all this injury information is collected. These two combined is the "what", the core subject, of the research question.
-\textbf{Improving} the data-collection is the outcome, the goal of the research. Improve can mean a lot of things, first and foremost it means speed and quality. 
-Speed is important to improve because if the collection process is too long per subject it can hurt the data in several ways. If the process is too long, the data-collector might be tempted to make shortcuts, hurting the quality of the data.
-The quantitative side of the data is also hurting if the process is too long, since you will not be able to collect as much as you want.
-Speeding up the process also means making it less complex, which again means making it less prone to error. So by making the process faster we're also able to increase the quality of the data.
-Quality can further be improved just by digitizing the process. This will remove many factors that can hurt the quality, like bad handwriting and environmental damage.
-\textbf{Web-based form} is the boundary of the research question. The data-collection is to be improved by web-based forms.
+\newpage \section*{Research question} 
+\textit{"\RQ"} \\\\ This question has
+many parts that we need to break down before we can discuss the research
+method.\\
 
-\section*{Research method}
-My method
+First of all \textbf{\is}, as described earlier, is an ongoing and
+systematic collection of injury information and then creating usable and
+understandable data from this information. In our case the surveillance is done
+in the National Hospital of Sri Lanka by nurses. \\
 
-\chapter{Conclusion}
+\textbf{Data-collection} means how all this injury information is
+collected. This and injury surveillance is the \textit{what}, the core subject, of the
+research question. In Sri Lanka the data is collected at the wards in the
+accident unit after care, using the bed head tickets. This data is then entered
+into DHIS. Currently they are collecting both the core data set and the
+supplementary data set created by \WHO.\\
 
-\backmatter{}
+\textbf{Web-based form} is the \textit{boundary} of the research question. We are to
+create a web-based form on top of DHIS. This application should improve on many
+of the limitations today's system have. It should also be as intuitive as
+possible, meaning that it should be easy to use and cooperate with the
+data-enterer.\\
+
+\textbf{Improving} the data-collection is the \textit{outcome}, the goal of the
+research. Improve can mean a lot of things, first and foremost it means speed
+and quality. Speed is important to improve because if the collection process is
+too long per subject it can hurt the data in several ways. If the process is too
+long, the data-collector might be tempted to make shortcuts, hurting the quality
+of the data. The quantitative side of the data is also hurting if the process
+is too long, since you will not be able to collect as much data as you want.
+Speeding up the process also means making it less complex, which again means
+making it less prone to error. So by making the process faster we're also able
+to increase the quality of the data.  Quality can further be improved just by
+digitizing the process. This will remove many factors that can hurt the quality,
+like bad handwriting and environmental damage.
+Improving can also be improving limitations the current system have, like
+automatically creating ICD-10 codes from the data entered.\\
+
+\subsection*{Research method} 
+The goal of our research question is to improve the data-collection for \is. To
+be able to determine whether or not our application is an improvement to the
+data-collection we need to learn how it's done today. We need to learn the
+routines and the process, the positives, the negatives and the limitations of
+the process. We need to know all there is to know to be able to say with
+confidence that we improved the data-collection or not. To learn this we need to do
+interviews with the nurses collection the data. Interviews focusing on their
+experience with today's system and their thoughts on how it can be improved.
+Observing the process can also be of great help. This way we might be able to
+spot problems the busy nurses are not seeing.
+Trying it for ourselves is also a great way to learn and to get hands-on
+experience. All this should be done in an iterative process. Do some interviews,
+observe, some more interviews and then observe some more. This way we will be
+looking at the situation differently each time, and maybe see something we
+otherwise would have missed.\\
+
+We plan on deploying our application as early as possible. This way we can get
+important feedback from the users very yearly in the process. This allows us to
+make changes and improve the application before we even travel to Sri Lanka. 
+Observing the nurses using the application will also give us useful information.\\
+
+After our application has been used for a little while we need to do
+much of the same as when we learned about today's system. Only this time we
+focus on our application. The interviews' focus is now our application and the nurses
+experience with it. This is very important data to determine if we have
+improved. If the nurses hate working with our application we haven't achieved much.
+But if they are satisfied with the application and how it is to work with, we can say
+we might be on the right track to improve. Since we wont have that much time
+testing our application, we need keep that in mind when analyzing this data.
+Even though the nurses like the application now, they might change their mind after
+spending more time with it.\\
+
+When the application has been in use for a while and we've collected some data,
+we can look at the numbers and compare with the old system. Did our new application
+enter more incidents a day than the old? Is the data quality higher or lower?
+If our application entered more incidents a day, the speed is most certainly
+improved. But does it hurt any other factors? If this comes at the cost 
+of data quality, or other factors, we need to determine if it's an improvement 
+worth having. Everything that might seem like an improvement must be carefully
+analyzed to make sure it's not hurting other factors. Again, we wont have that
+much time testing the application, so the numbers we get might suffer from this.
+After using the application for a longer period it might go up.
+
+\newpage
 \printbibliography
 \end{document}
