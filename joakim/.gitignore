@@ -6,3 +6,5 @@
 *.lof
 *.bcf
 *.aux
+*.bbl
+*.blg
