@@ -1,5 +1,5 @@
 all:
-	pdflatex assignment.tex 
+	latex assignment.tex && bibtex assignment && latex assignment.tex && assignment.tex
 
 clean:
-	rm -f *.aux *.bcf *.lof *.log *.lot *.run.xml *.toc
+	rm -f *.aux *.bcf *.lof *.log *.lot *.run.xml *.toc *-blx.bib *.bbl *.blg
